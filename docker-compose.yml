@@ -5,7 +5,7 @@ services:
   nginx:
     build:
       context: .
-    container_name: nginx
+    container_name: infra_nginx
     ports:
       - "80:80"
       - "443:443"
