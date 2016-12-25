@@ -13,4 +13,6 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./certs/:/etc/nginx/certs/
       - ./conf.d/:/etc/nginx/conf.d/
+      - ../static_root/:/static_root/
+      - ../media_root/:/media_root/
     restart: unless-stopped
